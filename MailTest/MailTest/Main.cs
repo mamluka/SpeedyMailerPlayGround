@@ -15,7 +15,7 @@ namespace MailTest
 			email.Body = "test";
 			email.From = new MailAddress("david@xomixinc.com", "david the great");
 
-			var client = new SmtpClient();
+			var client = new SmtpClient("localhost");
 			client.Send(email);
 			
 			Console.WriteLine ("Sent!");
