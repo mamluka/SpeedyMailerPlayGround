@@ -13,7 +13,8 @@ namespace MailTest
 			email.To.Add("davidm@delver.com");
 			email.Subject = "testing this";
 			email.Body = "test";
-			email.From = new MailAddress("david@xomixinc.com", "david the great");
+			email.From = new MailAddress("not-really-a-real-address@xomixinc.com", "david the great");
+			email.Sender=new MailAddress("VERP@xomixinc.com","VERP");
 
 			var client = new SmtpClient("localhost");
 			client.Send(email);
