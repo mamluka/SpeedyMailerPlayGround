@@ -10,7 +10,7 @@ namespace MailTest
 			Console.WriteLine ("Settings up");
 			
 			var email = new MailMessage();
-			email.To.Add("davidm@delver.com");
+			email.To.Add("david.mazvovsky@gmail.com");
 			email.Subject = "testing this";
 			email.Body = "test";
 			email.From = new MailAddress("not-really-a-real-address@xomixinc.com", "david the great");
